@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">JOE</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     </nav>
+     <div class="wrapper">
+
+        <section id="home">
+    <div class="container">
+        <button class="toggle-btn" onclick="toggleDarkMode()">
+            <i id="toggle-icon" class="fa-solid fa-toggle-off"></i>
+        </button>
+        <h1 class="text-center">Currency Converter</h1>
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" class="form-control" placeholder="Enter amount" />
+        </div>
+        <div class="form-group">
+            <label for="fromCurrency">From Currency:</label>
+            <select id="fromCurrency" class="form-control"></select>
+        </div>
+        <div class="form-group">
+            <label for="toCurrency">To Currency:</label>
+            <select id="toCurrency" class="form-control"></select>
+        </div>
+        <button class="btn btn-primary btn-block" onclick="convertCurrency()">
+            Convert
+        </button>
+        <div id="result" class="result text-center"></div>
+    </div>
+     </div>
+    </section>
+
+
+    <section id="about" class="section about">
+        <h2>About Us</h2>
+        <p>Welcome to <b>JOE</b> Currency Exchange! We provide reliable and efficient currency exchange services to help you get the best rates for your money. Whether you are traveling abroad or need to exchange currency for business purposes, we are here to assist you with our seamless process and competitive rates.</p>
+    </section>
+
+    <section id="services" class="section services">
+        <h2>Our Services</h2>
+        <p>At <b>JOE</b> , we offer a range of currency exchange services including:</p>
+        <ul>
+            <li>Exchange of major currencies including USD, EUR, EGP, and more.</li>
+            <li>Competitive exchange rates to ensure you get the best value for your money.</li>
+            <li>Fast and secure transactions with minimal fees.</li>
+            <li>Online currency conversion tools and resources.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, please feel free to reach out to us. We are here to help you with your currency exchange needs.</p>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Google -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="https://mail.google.com/mail/u/0/?fs=1&to=josephmagdy56@gmail.com&tf=cm"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+  
+            <!-- Linkedin -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="https://www.linkedin.com/in/josephmagdy/"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              data-mdb-ripple-init
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="https://github.com/josephmagdy2001"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+         </div>
+       
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(249, 248, 248, 0.738);">
+          © 2020 Copyright: <a href="https://portfolio-rho-five-73.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <b>Joseph Magdy Habib</b>
+          </a>
+         </div>
+       </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://api.exchangerate-api.com/v4/latest/USD"></script>
+    <script src="/script.js"></script>
+
+
+
+</body>
+
+</html>
